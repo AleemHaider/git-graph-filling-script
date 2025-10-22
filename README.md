@@ -11,12 +11,22 @@ Creates realistic GitHub activity with backdated commits that appear on your con
 2. ⭐ **Realistic commits** - Professional-looking (generated code)
 3. ⚡ **Simple commits** - Basic activity (minimal code)
 
+## 💻 Platform Support
+
+✅ **Linux** - Use `simple_run.sh`
+✅ **Mac** - Use `simple_run.sh`
+✅ **Windows** - Use `simple_run.bat` or `simple_run.ps1`
+
+All features work on all platforms!
+
 ## 🚀 Quick Start
 
 ### 1. Create GitHub Repository
 Go to https://github.com/new and create a repository (don't initialize it)
 
 ### 2. Run One Command
+
+**Linux/Mac:**
 
 **Best method (clones real code):**
 ```bash
@@ -36,6 +46,28 @@ cd /home/haider/Desktop/github-activity-generator
   --start 2024-01-01 \
   --end 2024-12-31 \
   --realistic
+```
+
+**Windows (Command Prompt):**
+```cmd
+cd %USERPROFILE%\Desktop\github-activity-generator
+
+simple_run.bat ^
+  --repo YourUsername/your-repo ^
+  --start 2024-01-01 ^
+  --end 2024-12-31 ^
+  --source-repo https://github.com/vercel/next.js.git
+```
+
+**Windows (PowerShell):**
+```powershell
+cd $env:USERPROFILE\Desktop\github-activity-generator
+
+.\simple_run.ps1 `
+  -Repo YourUsername/your-repo `
+  -Start 2024-01-01 `
+  -End 2024-12-31 `
+  -SourceRepo https://github.com/vercel/next.js.git
 ```
 
 ### 3. Done!
@@ -233,10 +265,11 @@ Use HTTPS URLs:
 
 ## 📚 Documentation
 
-- `FINAL_GUIDE.md` - Complete guide with all details
-- `CLONE_REPO_GUIDE.md` - Clone mode detailed docs
-- `REALISTIC_USAGE.md` - Realistic mode detailed docs
-- `USAGE.md` - Original usage documentation
+- **`FINAL_GUIDE.md`** - Complete comprehensive guide
+- **`WINDOWS_GUIDE.md`** - Windows-specific instructions
+- **`CLONE_REPO_GUIDE.md`** - Clone mode detailed docs
+- **`REALISTIC_USAGE.md`** - Realistic mode detailed docs
+- **`USAGE.md`** - Original usage documentation
 
 ## ❓ Help
 
